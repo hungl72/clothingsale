@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>FashionShop</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+<servlet>
+		<servlet-name>ControllersPublicIndex</servlet-name>
+		<servlet-class>controllers.publics.ControllersPublicIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllersPublicIndex</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+<servlet>
+		<servlet-name>ControllersPublicProduct</servlet-name>
+		<servlet-class>controllers.publics.ControllersPublicProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllersPublicProduct</servlet-name>
+		<url-pattern>/product</url-pattern>
+</servlet-mapping>
+<servlet>
+		<servlet-name>ControllersPublicFavourites</servlet-name>
+		<servlet-class>controllers.publics.ControllersPublicFavourites</servlet-class>
+</servlet>
+<servlet-mapping>
+		<servlet-name>ControllersPublicFavourites</servlet-name>
+		<url-pattern>/favourite</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ControllersPublicDetail</servlet-name>
+		<servlet-class>controllers.publics.ControllersPublicDetail</servlet-class>
+</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllersPublicDetail</servlet-name>
+		<url-pattern>/detail</url-pattern>
+</servlet-mapping>	
+
+<servlet>
+		<servlet-name>ControllersPublicCartDetail</servlet-name>
+		<servlet-class>controllers.publics.ControllersPublicCartDetail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllersPublicCartDetail</servlet-name>
+		<url-pattern>/cartdetail</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>ControllersPublicLogin</servlet-name>
+		<servlet-class>controllers.publics.ControllersPublicLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllersPublicLogin</servlet-name>
+		<url-pattern>/login</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>ControllersPublicSignup</servlet-name>
+		<servlet-class>controllers.publics.ControllersPublicSignup</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllersPublicSignup</servlet-name>
+		<url-pattern>/signup</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>ControllersPublicLogout</servlet-name>
+		<servlet-class>controllers.publics.ControllersPublicLogout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllersPublicLogout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>ControllersPublicCart</servlet-name>
+		<servlet-class>controllers.publics.ControllersPublicCart</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllersPublicCart</servlet-name>
+		<url-pattern>/cart</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>ControllersPublicViewFavourites</servlet-name>
+		<servlet-class>controllers.publics.ControllersPublicViewFavourites</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllersPublicViewFavourites</servlet-name>
+		<url-pattern>/viewfavourite</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>ControllersPublicSearch</servlet-name>
+		<servlet-class>controllers.publics.ControllersPublicSearch</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllersPublicSearch</servlet-name>
+		<url-pattern>/search</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>PublicSearchFillerAjax</servlet-name>
+		<servlet-class>controllers.publics.PublicSearchFillerAjax</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicSearchFillerAjax</servlet-name>
+		<url-pattern>/searchajax</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>ControllersPublicDetailProduct</servlet-name>
+		<servlet-class>controllers.publics.ControllersPublicDetailProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllersPublicDetailProduct</servlet-name>
+		<url-pattern>/detailproduct</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>ControllersPublicOrder</servlet-name>
+		<servlet-class>controllers.publics.ControllersPublicOrder</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllersPublicOrder</servlet-name>
+		<url-pattern>/orderproduct</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>PublicCommentController</servlet-name>
+		<servlet-class>controllers.publics.PublicCommentController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicCommentController</servlet-name>
+		<url-pattern>/ajaxcomment</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminIndexController</servlet-name>
+		<servlet-class>controllers.admins.index.AdminIndexController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminIndexController</servlet-name>
+		<url-pattern>/adminindex</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminCategoriesIndex</servlet-name>
+		<servlet-class>controllers.admins.categories.AdminCategoriesIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCategoriesIndex</servlet-name>
+		<url-pattern>/admincategories</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminCategoriesParentAdd</servlet-name>
+		<servlet-class>controllers.admins.categories.AdminCategoriesParentAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCategoriesParentAdd</servlet-name>
+		<url-pattern>/admincategoriesparentadd</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminCategoriesDel</servlet-name>
+		<servlet-class>controllers.admins.categories.AdminCategoriesDel</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCategoriesDel</servlet-name>
+		<url-pattern>/admincategoriesdel</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminProductDel</servlet-name>
+		<servlet-class>controllers.admins.products.AdminProductDel</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminProductDel</servlet-name>
+		<url-pattern>/adminproductdel</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminProductsIndex</servlet-name>
+		<servlet-class>controllers.admins.products.AdminProductsIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminProductsIndex</servlet-name>
+		<url-pattern>/adminproductsindex</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminUserIndex</servlet-name>
+		<servlet-class>controllers.admins.users.AdminUserIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminUserIndex</servlet-name>
+		<url-pattern>/adminusersindex</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminAddProductsDetail</servlet-name>
+		<servlet-class>controllers.admins.products.AdminAddProductsDetail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminAddProductsDetail</servlet-name>
+		<url-pattern>/adminaddproductsdetail</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminEditProductDetail</servlet-name>
+		<servlet-class>controllers.admins.products.AdminEditProductDetail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminEditProductDetail</servlet-name>
+		<url-pattern>/admineditproductsdetail</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminEditUserDetail</servlet-name>
+		<servlet-class>controllers.admins.users.AdminEditUserDetail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminEditUserDetail</servlet-name>
+		<url-pattern>/admineditusersdetail</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminDelUser</servlet-name>
+		<servlet-class>controllers.admins.users.AdminDelUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminDelUser</servlet-name>
+		<url-pattern>/admindelusers</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminCategoriesEdit</servlet-name>
+		<servlet-class>controllers.admins.categories.AdminCategoriesEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCategoriesEdit</servlet-name>
+		<url-pattern>/admincategoriesedit</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>controllers.admins.auth.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/logincontroller</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>LogoutController</servlet-name>
+		<servlet-class>controllers.admins.auth.LogoutController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutController</servlet-name>
+		<url-pattern>/logoutcontroller</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminIndexComments</servlet-name>
+		<servlet-class>controllers.admins.comments.AdminIndexComments</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminIndexComments</servlet-name>
+		<url-pattern>/adminindexcomments</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminIndexOrder</servlet-name>
+		<servlet-class>controllers.admins.order.AdminIndexOrder</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminIndexOrder</servlet-name>
+		<url-pattern>/adminindexorder</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>Administrator</servlet-name>
+		<servlet-class>controllers.admins.administrator.Administrator</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Administrator</servlet-name>
+		<url-pattern>/administrator</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>AdminIndexDecentralization</servlet-name>
+		<servlet-class>controllers.admins.decentralization.AdminIndexDecentralization</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminIndexDecentralization</servlet-name>
+		<url-pattern>/ajaxdecentralization</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>CheckProduct</servlet-name>
+		<servlet-class>controllers.publics.CheckProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminCategoriesEdit</servlet-name>
+		<url-pattern>/checkproduct</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>Multiupload</servlet-name>
+		<servlet-class>utils.Multiupload</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Multiupload</servlet-name>
+		<url-pattern>/multiupload</url-pattern>
+</servlet-mapping>
+</web-app>
